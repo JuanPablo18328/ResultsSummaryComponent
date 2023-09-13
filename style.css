@@ -1,0 +1,243 @@
+:root{
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+* p, body p{
+    font-size: 18px;
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.container{
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    box-shadow: 25px 25px 54px -21px rgba(235,241,255,1);
+    border-radius: 30px;
+    height: 480px;
+}
+
+.containerLeft{
+    background: var(--VioletBlue);
+    background: rgb(120,87,255);
+    background: -moz-linear-gradient(180deg, rgba(120,87,255,1) 11%, rgba(46,43,233,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(120,87,255,1) 11%, rgba(46,43,233,1) 100%);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 11%, rgba(46,43,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857ff",endColorstr="#2e2be9",GradientType=1);
+    border-radius: 30px;
+    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.titleResult{
+    font-size: 19px;
+    color: #d3d3d3;
+    font-weight: 600;
+    text-align: center;
+}
+
+.containerScore{
+    border-radius: 50%;
+    background: rgb(78,33,202);
+    background: -moz-linear-gradient(180deg, rgba(78,33,202,1) 37%, rgba(36,33,202,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(78,33,202,1) 37%, rgba(36,33,202,1) 100%);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 37%, rgba(36,33,202,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4e21ca",endColorstr="#2421ca",GradientType=1);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+}
+
+.score{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.subScore{
+    color: #bfbfbf94;
+    font-weight: 600;
+}
+
+.titleContent{
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contentText{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #bfbfbf94;
+}
+
+.containerRight{
+    width: 50%;
+    border-radius: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    position: relative;
+}
+
+.titleSummary{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--DarkGrayBlue);
+    margin-bottom: 27px;
+}
+
+.containerClass{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.class{
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around; 
+    align-items: center;
+    
+    border-radius: 10px;
+}
+
+.Reaction{
+    background: hsl(0deg 100% 67% / 13%);
+}
+
+.Reaction .titleClass{
+    color: var(--LightRed);
+}
+
+.Memory{
+    background-color: hsl(39deg 100% 56% / 23%);
+}
+
+.Memory .titleClass{
+    color: var(--OrangeYellow);
+}
+
+.Verbal{
+    background: hsl(166deg 100% 37% / 24%);
+}
+
+.Verbal .titleClass{
+    color: var(--GreenTeal);
+}
+
+.Visual{
+    background: hsl(234deg 85% 45% / 19%);
+}
+
+.Visual .titleClass{
+    color: var(--CobaltBlue);
+}
+.titleClass{
+    font-weight: 600;
+}
+
+.scoreClass{
+    display: flex;
+    gap: 6px;
+}
+
+.scoreGet{
+    color: var(--DarkGrayBlue);
+    font-weight: 600; 
+}
+
+
+.subScoreGet{
+    color: #999999cf;
+    font-weight: 600;
+}
+
+.containerButton{
+    position: absolute;
+    bottom: 73px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.containerButton button{
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    background: var(--DarkGrayBlue);
+    color: #fff;
+    height: 100%;
+    border-radius: 45px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    body{
+        margin: 0;
+    }
+
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .containerLeft{
+        width: 91%;
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .containerRight{
+        width: 90%;
+    }
+
+    .containerButton{
+        margin: 20px 0px;
+        position: initial;
+    }
+}
